@@ -1,0 +1,344 @@
+:root {
+  background: #181715;
+  color: #f0ede6;
+}
+
+.portfolio,
+.portfolio[data-theme='peach'],
+.portfolio[data-theme='pink'] {
+  --ink: #f0ede6;
+  --accent: #d3bd94;
+  --tint: #363025;
+
+  color: #f0ede6;
+
+  background:
+    radial-gradient(
+      ellipse at 90% 5%,
+      #332f27,
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 0 40%,
+      #272422,
+      transparent 35%
+    ),
+    #181715;
+}
+
+.portfolio[data-theme='peach'] {
+  --accent: #c6c1b2;
+  --tint: #34322c;
+
+  background:
+    radial-gradient(
+      ellipse at 90% 5%,
+      #32312c,
+      transparent 38%
+    ),
+    #181715;
+}
+
+.portfolio[data-theme='pink'] {
+  --accent: #aebdaa;
+  --tint: #2d342c;
+
+  background:
+    radial-gradient(
+      ellipse at 90% 5%,
+      #2c332b,
+      transparent 38%
+    ),
+    #181715;
+}
+
+header {
+  background: #181715e8;
+  border-color: #39362f;
+}
+
+.brand {
+  color: #eee4d2;
+}
+
+.brand::after,
+.hero-signature::after {
+  border-color: #ac9570;
+}
+
+.pill,
+.button {
+  background: #25231e;
+  border-color: #4e483c;
+  color: #e3daca;
+}
+
+.primary,
+.filter.selected {
+  background: var(--accent);
+  color: #211e18;
+  border-color: var(--accent);
+}
+
+.lead,
+.role-line,
+.muted,
+.section-top > p,
+.project-body p,
+.lab-card p,
+.current p,
+.contact > p:not(.eyebrow) {
+  color: #b9b3a7;
+}
+
+.intro-label {
+  color: #b2a58e;
+}
+
+.editor {
+  background: #201e19;
+  border-color: #504736;
+
+  box-shadow:
+    12px 16px 0 #302b2390,
+    0 22px 55px #0003;
+}
+
+.editor pre {
+  color: #d8cdbb;
+}
+
+.editor b {
+  color: #b8c2a4;
+}
+
+.syntax {
+  color: #dcc39a;
+}
+
+.editor-top,
+.editor-bottom {
+  border-color: #40392e;
+}
+
+.editor-top span {
+  color: #b3a58a;
+}
+
+.editor-top small,
+.editor-bottom {
+  color: #b8aa91;
+}
+
+.orb-one {
+  background: linear-gradient(
+    130deg,
+    #736143,
+    #574b3a
+  );
+
+  opacity: 0.25;
+}
+
+.orb-two {
+  background: linear-gradient(
+    130deg,
+    #495344,
+    #5b5244
+  );
+
+  opacity: 0.22;
+}
+
+.floating-tag {
+  background: #29251e;
+  border-color: #5a4c38;
+  color: #d2c1a3;
+}
+
+.customizer {
+  border-color: #413b31;
+  color: #c6b99f;
+}
+
+.motion-button,
+.filter {
+  background: #25221c;
+  border-color: #514837;
+  color: #cfc1a8;
+}
+
+.swatch {
+  border-color: #29251e;
+  outline-color: #776a53;
+}
+
+.swatch.lavender {
+  background: #d3bd94;
+}
+
+.swatch.peach {
+  background: #c6c1b2;
+}
+
+.swatch.pink {
+  background: #aebdaa;
+}
+
+.search-label input {
+  background: #201e19;
+  border-color: #514837;
+  color: #e7dfcf;
+}
+
+.project,
+.lab-card {
+  background: #211f1a;
+  border-color: #403a30;
+}
+
+.project:hover {
+  box-shadow: 0 18px 38px #0003;
+}
+
+.tag {
+  color: #d1c1a7;
+  background: #302a20;
+  border-color: #4e4434;
+}
+
+.detail-button {
+  border-color: #574a36;
+}
+
+#about {
+  border-color: #413b31;
+}
+
+.about-sticker {
+  background: #302a20;
+  border-color: #5a4c37;
+  color: #d5c19f;
+}
+
+.skills span {
+  background: #302a20;
+  color: #d5c3a4;
+  border-color: #514634;
+}
+
+.terminal {
+  background: #171610;
+  border-color: #48412f;
+}
+
+.document-art {
+  background: linear-gradient(
+    135deg,
+    #353020,
+    #30352b
+  );
+
+  border-color: #594e36;
+}
+
+.document-art strong {
+  color: #ddcaaa;
+}
+
+.document-art > span {
+  color: #c2b18f;
+}
+
+.current,
+.contact {
+  background: linear-gradient(
+    120deg,
+    #302a20,
+    #252820
+  );
+
+  border-color: #504733;
+}
+
+.current .pill {
+  background: #272319;
+}
+
+.orbit {
+  border-color: #a18d68;
+}
+
+.orbit div {
+  background: #221f16;
+  color: #decaa4;
+}
+
+.contact .button:not(.primary) {
+  background: #28241c;
+}
+
+.copy-message {
+  color: #d8c3a0 !important;
+}
+
+footer {
+  border-color: #443b2e;
+  color: #b4a58a;
+}
+
+dialog {
+  background: #211e17;
+  color: #efe4d0;
+  border-color: #756342;
+}
+
+dialog > p:not(.eyebrow) {
+  color: #c5b69c;
+}
+
+.modal-note {
+  background: #342c20;
+  color: #d6c2a1;
+}
+
+.close-button {
+  background: #423620;
+  color: #ecd7b1;
+}
+
+.live-cover {
+  background: #201e19;
+}
+
+.preview-bar,
+.preview-caption {
+  border-color: #4a4131;
+  color: #c2b397;
+}
+
+.preview-dots {
+  color: #b8a27b;
+}
+
+.preview-caption a {
+  color: #dfc69a;
+}
+
+.preview-open span {
+  background: #252017ee;
+  color: #f0dfc1;
+  border-color: #a48b5c;
+}
+
+.empty {
+  color: #c5b293;
+}
+
+.project-body .text-xs {
+  color: #bcaa8b;
+}
+
+.hero-signature {
+  color: var(--accent);
+}

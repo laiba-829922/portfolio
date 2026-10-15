@@ -1,0 +1,349 @@
+:root {
+  background: #0c1015;
+  color: #e8edf4;
+}
+
+.portfolio,
+.portfolio[data-theme='peach'],
+.portfolio[data-theme='pink'] {
+  --ink: #e8edf4;
+  --accent: #82b7ed;
+  --tint: #1c2b3c;
+
+  color: #e8edf4;
+
+  background:
+    radial-gradient(
+      ellipse at 95% 10%,
+      #182536,
+      transparent 40%
+    ),
+    #0c1015;
+}
+
+.portfolio[data-theme='peach'] {
+  --accent: #a7bbcf;
+  --tint: #24303c;
+
+  background:
+    radial-gradient(
+      ellipse at 95% 10%,
+      #222d3a,
+      transparent 40%
+    ),
+    #0c1015;
+}
+
+.portfolio[data-theme='pink'] {
+  --accent: #87c4c0;
+  --tint: #18312f;
+
+  background:
+    radial-gradient(
+      ellipse at 95% 10%,
+      #162d30,
+      transparent 40%
+    ),
+    #0c1015;
+}
+
+header {
+  background: #0c1015e8;
+  border-color: #29323e;
+}
+
+.brand {
+  color: #dde7f4;
+}
+
+.brand::after,
+.hero-signature::after {
+  border-color: #7595b7;
+}
+
+.pill,
+.button {
+  background: #151e29;
+  border-color: #344556;
+  color: #d5e0ed;
+}
+
+.primary,
+.filter.selected {
+  background: var(--accent);
+  color: #101923;
+  border-color: var(--accent);
+}
+
+.lead,
+.role-line,
+.muted,
+.section-top > p,
+.project-body p,
+.lab-card p,
+.current p,
+.contact > p:not(.eyebrow) {
+  color: #a5b2c2;
+}
+
+.intro-label {
+  color: #9bafc5;
+}
+
+.editor {
+  background: #111923;
+  border-color: #35495f;
+
+  box-shadow:
+    12px 16px 0 #18243590,
+    0 22px 55px #0005;
+
+  transform: none;
+}
+
+.editor pre {
+  color: #c5d3e3;
+}
+
+.editor b {
+  color: #91bba9;
+}
+
+.syntax {
+  color: #82b7ed;
+}
+
+.editor-top,
+.editor-bottom {
+  border-color: #293b50;
+}
+
+.editor-top span {
+  color: #7799bb;
+}
+
+.editor-top small,
+.editor-bottom {
+  color: #91a7bf;
+}
+
+.orb-one {
+  background: linear-gradient(
+    130deg,
+    #264763,
+    #20384b
+  );
+
+  opacity: 0.5;
+}
+
+.orb-two {
+  background: linear-gradient(
+    130deg,
+    #26413b,
+    #1e344b
+  );
+
+  opacity: 0.35;
+}
+
+.floating-tag {
+  background: #152231;
+  border-color: #344d66;
+  color: #b5cce3;
+}
+
+.flower,
+.small-star {
+  display: none;
+}
+
+.customizer {
+  border-color: #2a3746;
+  color: #9fb4ca;
+}
+
+.motion-button,
+.filter {
+  background: #14202d;
+  border-color: #34495f;
+  color: #b5c9de;
+}
+
+.swatch {
+  border-color: #17212c;
+  outline-color: #5d7793;
+}
+
+.swatch.lavender {
+  background: #82b7ed;
+}
+
+.swatch.peach {
+  background: #a7bbcf;
+}
+
+.swatch.pink {
+  background: #87c4c0;
+}
+
+.search-label input {
+  background: #101923;
+  border-color: #34495f;
+  color: #e3edf8;
+}
+
+.project,
+.lab-card {
+  background: #111923;
+  border-color: #2c3b4c;
+}
+
+.project {
+  border-radius: 12px;
+}
+
+.tag {
+  color: #afc6de;
+  background: #1a2939;
+  border-color: #334b64;
+}
+
+.detail-button {
+  border-color: #354c65;
+}
+
+#about {
+  border-color: #2a3746;
+}
+
+.about-sticker {
+  background: #192738;
+  border-color: #3a5068;
+  color: #b2c9e2;
+  transform: none;
+}
+
+.about-sticker span {
+  display: none;
+}
+
+.skills span {
+  background: #192839;
+  color: #b4cde6;
+  border-color: #344c65;
+}
+
+.terminal {
+  background: #0a1017;
+  border-color: #304254;
+}
+
+.document-art {
+  background: linear-gradient(
+    135deg,
+    #1d2d40,
+    #22333b
+  );
+
+  border-color: #3b5267;
+}
+
+.document-art strong {
+  color: #c1d5e7;
+}
+
+.document-art > span {
+  color: #a3bbd1;
+}
+
+.current,
+.contact {
+  background: linear-gradient(
+    120deg,
+    #172738,
+    #18242e
+  );
+
+  border-color: #344b60;
+}
+
+.current .pill {
+  background: #14212f;
+}
+
+.orbit {
+  border-color: #6a8caa;
+}
+
+.orbit div {
+  background: #101d2b;
+  color: #b9d5f0;
+}
+
+.contact .button:not(.primary) {
+  background: #14212e;
+}
+
+.copy-message {
+  color: #afcde9 !important;
+}
+
+footer {
+  border-color: #2b3d50;
+  color: #92a8bf;
+}
+
+dialog {
+  background: #101b28;
+  color: #e0ebf7;
+  border-color: #4a6580;
+}
+
+dialog > p:not(.eyebrow) {
+  color: #a5bdd3;
+}
+
+.modal-note {
+  background: #1b2c3e;
+  color: #b4c9df;
+}
+
+.close-button {
+  background: #23384e;
+  color: #d3e5f6;
+}
+
+.live-cover {
+  background: #101923;
+}
+
+.preview-bar,
+.preview-caption {
+  border-color: #314355;
+  color: #a1b9ce;
+}
+
+.preview-dots {
+  color: #829eb9;
+}
+
+.preview-caption a {
+  color: #a3c9ec;
+}
+
+.preview-open span {
+  background: #111e2ced;
+  color: #dcebf8;
+  border-color: #6485a4;
+}
+
+.empty {
+  color: #a3bad0;
+}
+
+@keyframes editor-float {
+  50% {
+    transform: translateY(-8px);
+  }
+}

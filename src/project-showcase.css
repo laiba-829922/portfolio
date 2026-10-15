@@ -1,0 +1,346 @@
+.case-studies {
+  --story-accent: #b9b2ef;
+  --story-mint: #a4d2c4;
+}
+.case-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.case-filters {
+  display: flex;
+  gap: 8px;
+}
+.case-filters [aria-pressed='true'] {
+  background: var(--story-accent);
+  color: #211b30;
+  border-color: var(--story-accent);
+}
+.case-controls input {
+  background: #191923;
+  border: 1px solid #51495f;
+  border-radius: 30px;
+  padding: 12px 18px;
+  color: #e9e4f4;
+  font:
+    12px 'Manrope',
+    sans-serif;
+  width: 260px;
+}
+.case-count {
+  font: 10px monospace;
+  color: #9b90ad;
+  margin: 18px 0 35px;
+}
+.project-stories {
+  display: grid;
+  gap: 60px;
+}
+.project-story {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 45px;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #78658b45;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #24202d99, #17242670);
+  position: relative;
+}
+.story-reverse {
+  grid-template-columns: 1fr 1.15fr;
+}
+.story-reverse .story-preview {
+  order: 2;
+}
+.story-reverse .story-content {
+  order: 1;
+}
+.story-preview {
+  min-width: 0;
+}
+.story-browser {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  background: #171820;
+  border: 1px solid #484051;
+  border-radius: 13px 13px 0 0;
+  color: #a99ab9;
+  font: 8px monospace;
+}
+.story-browser > a {
+  margin-left: auto;
+  font-size: 18px;
+  color: #d8c6ef;
+}
+.browser-dots {
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #a88ebc;
+}
+.story-frame {
+  position: relative;
+  height: 290px;
+  background: #fff;
+  overflow: hidden;
+  container-type: inline-size;
+  border-inline: 1px solid #484051;
+}
+.story-frame iframe {
+  display: block;
+  border: 0;
+  width: 1280px;
+  height: 850px;
+  transform: scale(calc(100cqw / 1280px));
+  transform-origin: top left;
+  pointer-events: none;
+}
+.story-preview-link {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: transparent;
+}
+.story-preview-link span {
+  opacity: 0;
+  transition: opacity 0.2s;
+  border: 1px solid #bba7d3;
+  background: #21192ded;
+  color: #ede2fa;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font:
+    11px 'Manrope',
+    sans-serif;
+}
+.story-preview-link:hover span,
+.story-preview-link:focus-visible span {
+  opacity: 1;
+}
+.story-preview-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #484051;
+  background: #171820;
+  border-radius: 0 0 13px 13px;
+  font: 8px monospace;
+  color: #9c8bab;
+}
+.story-preview-footer button {
+  color: #c7b4dd;
+  font:
+    9px 'Manrope',
+    sans-serif;
+  cursor: pointer;
+}
+.preview-help {
+  font:
+    9px/1.7 'Manrope',
+    sans-serif;
+  color: #93849f;
+  margin-top: 11px;
+}
+.preview-paused {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 8px;
+  background: #181a22;
+  color: #c8bbd7;
+  font-size: 14px;
+}
+.preview-paused span {
+  font-size: 10px;
+  color: #9c8dad;
+}
+.story-number {
+  font: 9px monospace;
+  letter-spacing: 2px;
+  color: #ad94c4;
+  margin-bottom: 18px;
+}
+.story-label {
+  font:
+    10px 'Manrope',
+    sans-serif;
+  color: var(--story-mint);
+  margin-bottom: 8px;
+}
+.story-content h3 {
+  font:
+    38px/1.2 Georgia,
+    serif;
+  color: #eee7f6;
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+}
+.story-tabs {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #58465f70;
+}
+.story-tabs button {
+  font:
+    11px 'Manrope',
+    sans-serif;
+  color: #9787a7;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+.story-tabs [aria-selected='true'] {
+  color: #e7d6fb;
+  border-color: var(--story-accent);
+}
+.story-panel {
+  min-height: 175px;
+  padding-top: 18px;
+  color: #b6a9c6;
+  font:
+    12px/1.95 'Manrope',
+    sans-serif;
+  animation: story-appear 0.3s;
+}
+.story-panel p {
+  margin: 0;
+}
+.story-panel ul,
+.story-panel ol {
+  padding-left: 18px;
+  margin: 0;
+}
+.story-panel ul {
+  list-style: disc;
+}
+.story-panel ol {
+  list-style: decimal;
+}
+.story-panel li {
+  margin-bottom: 7px;
+}
+.story-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.story-buttons .primary {
+  background: var(--story-accent);
+  color: #20192c;
+  border-color: var(--story-accent);
+}
+.story-note {
+  font:
+    9px/1.8 'Manrope',
+    sans-serif;
+  color: #9785a5;
+  margin-top: 20px;
+}
+.pakistan-clock {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+  font: 9px monospace;
+  color: #ada1bd;
+}
+.pakistan-clock time {
+  color: #d6c7e8;
+  margin-left: 5px;
+  font-variant-numeric: tabular-nums;
+}
+.clock-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #9bc8b0;
+  box-shadow: 0 0 8px #9bc8b040;
+}
+header nav {
+  flex-wrap: wrap;
+}
+.case-studies button:focus-visible,
+.story-preview a:focus-visible,
+.case-controls input:focus-visible {
+  outline: 2px solid #b9b2ef;
+  outline-offset: 4px;
+}
+@keyframes story-appear {
+  from {
+    opacity: 0.4;
+    translate: 0 5px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@media (max-width: 900px) {
+  .project-story,
+  .story-reverse {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 22px;
+  }
+  .story-reverse .story-preview,
+  .story-reverse .story-content {
+    order: initial;
+  }
+  .story-frame {
+    height: 310px;
+  }
+  .story-panel {
+    min-height: 130px;
+  }
+  .story-content h3 {
+    font-size: 32px;
+  }
+  .project-stories {
+    gap: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .project-story {
+    padding: 16px;
+  }
+  .story-frame {
+    height: 240px;
+  }
+  .case-controls label,
+  .case-controls input {
+    width: 100%;
+  }
+  .case-filters {
+    flex-wrap: wrap;
+  }
+  .story-content h3 {
+    font-size: 29px;
+  }
+  .story-tabs {
+    gap: 20px;
+  }
+  .pakistan-clock {
+    font-size: 8px;
+  }
+  .story-buttons .button {
+    font-size: 10px;
+    padding: 11px 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-panel {
+    animation: none;
+  }
+  .story-preview-link span {
+    transition: none;
+  }
+}
