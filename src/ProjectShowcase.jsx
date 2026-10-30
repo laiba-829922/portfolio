@@ -2,6 +2,29 @@ import React, { useEffect, useState } from 'react';
 import './project-showcase.css';
 
 const PROJECTS = [
+
+    {
+    id: 'bizpilot',
+    name: 'BizPilot AI',
+    category: 'Applications',
+    label: 'AI-powered business copilot',
+    url: 'https://bizpilot-ai-ruby.vercel.app/',
+    overview:
+      'A modern AI-powered business copilot designed to help users explore business insights and manage business workflows through an intuitive interface.',
+    features: [
+      'Modern SaaS-style dashboard',
+      'AI-powered business assistance',
+      'Business insights and analytics interface',
+      'Clean and user-friendly experience',
+    ],
+    flow: [
+      'Open the BizPilot AI platform',
+      'Explore the dashboard',
+      'Navigate business tools',
+      'Interact with available features',
+    ],
+  },
+
   {
     id: 'elan',
     name: 'Élan Events',

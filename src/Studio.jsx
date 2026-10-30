@@ -73,7 +73,7 @@ export function Overview() {
             </div>
             <div className="overview-facts">
               <div>
-                <strong>04</strong>
+                <strong>05</strong>
                 <span>Live web projects</span>
               </div>
               <div>
